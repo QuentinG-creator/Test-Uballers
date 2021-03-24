@@ -7,3 +7,5 @@ Pour les étapes d'éxecutions voici comment procéder :
 3. Et maintenant il ne reste plus qu'à tester.
 
 Pour plus ample information j'ai rédigé quelques lignes en commentaire dans index.php.
+
+![Uploading image.png…]()
