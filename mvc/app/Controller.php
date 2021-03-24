@@ -11,7 +11,16 @@ abstract class Controller
 	public function render(string $file, array $data = [])
 	{
 		extract($data);
+        //start the buffering
+        ob_start();
+
         require_once(ROOT.'views/'.$file.'.php');
+
+        //We stock all the content in the variable $content
+        $content=ob_get_clean();
+
+        //We create the views
+        require_once(ROOT.'views/layout/default.php');
 	}
 
 	/**

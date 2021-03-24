@@ -15,7 +15,7 @@ class Model
     public $id;
 
     /**
-     * Function of initialization of the database
+     * Function of initialisation of the database
      *
      * @return void
      */
@@ -49,7 +49,6 @@ class Model
      *
      * @return void
      */
-    
     public function getAll(){
         $sql = "SELECT * FROM ".$this->table;
         $query = $this->_connexion->prepare($sql);

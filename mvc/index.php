@@ -12,7 +12,7 @@
  * 3.Au niveau de la partie HTML pas vraiment de difficulté rencontrer.
  * 
  * Pour ce qui est des commentaire j'ai essayé de les faire au maximum en anglais.
- *
+ * 
  */
 
 //We go to generate an constant for get the road of index.php

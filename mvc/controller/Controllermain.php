@@ -174,7 +174,7 @@ class Controllermain extends Controller
 			'mdp_log' => '',
 			'login' => '',
 			'login_err' => '',
-			'mdp_err' => '',
+			'mdp_log_err' => '',
 			'valid_login' => ''
 		];
 
@@ -191,6 +191,7 @@ class Controllermain extends Controller
 				'mdp_log' => trim($_POST['mdp_login']),
 				'login' => '',
 				'login_err' => '',
+				'mdp_log_err' => '',
 				'valid_login' => ''
 			];
 
@@ -218,12 +219,12 @@ class Controllermain extends Controller
 			//Validate of password
 			if(empty($data['mdp_log']))
 			{
-				$data['mdp_err']="Veuillez renseigner un mot de passe";
+				$data['mdp_log_err']="Veuillez renseigner un mot de passe";
 			}
 
 
 			//Check if we doesn't have any error
-			if(empty($data['login_err']) && empty($data['mdp_err']))
+			if(empty($data['login_err']) && empty($data['mdp_log_err']))
 			{
 				$loggedUser=$this->Users->login($data['mdp_log'],$data['login']);
 				
