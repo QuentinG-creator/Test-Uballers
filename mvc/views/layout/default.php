@@ -33,7 +33,7 @@
 		</form>
 	</nav>
 		
-	<?= $content ?>
+	<?php echo $content ?>
 
 </body>
 </html>

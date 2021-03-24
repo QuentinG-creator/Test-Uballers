@@ -4,8 +4,8 @@ class Model
 	//Database variable 
     private $host = "localhost";
     private $db_name = "Site_test";
-    private $username = "phpmyadmin";
-    private $password = "ih37cy15&*";
+    private $username = "inserer votre nom d'utilisateur ici";
+    private $password = "inserer votre mot de passe ici";
 
     //Property used for connection instance
     protected $_connexion;
@@ -33,7 +33,7 @@ class Model
     }
 
     /**
-     * With this method we can get the lign with the ID
+     * With this method we retrieve user information via the id
      *
      * @return void
      */
@@ -45,7 +45,7 @@ class Model
     }
 
     /**
-     * For get all of lign in the Database at the table
+     * For get all of information in the Database at the table
      *
      * @return void
      */

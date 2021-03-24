@@ -7,12 +7,13 @@
  *
  *
  * Difficulter rencontrer :
- * 1.Quelque soucis au niveau de la programmation de l'enregistrement des utilisateur et de la connexion.
+ * 1.Quelques soucis au niveau de la programmation de l'enregistrement des utilisateur et de la connexion.
  * 2.Sur la partie css difficulté a bien mettre en place la page d'inscription.
  * 3.Au niveau de la partie HTML pas vraiment de difficulté rencontrer.
  * 
- * Pour ce qui est des commentaire j'ai essayé de les faire au maximum en anglais.
+ * Pour ce qui est des commentaires j'ai essayé de les faire au maximum en anglais.
  * 
+ * Version : 1.0
  */
 
 //We go to generate an constant for get the road of index.php
@@ -24,7 +25,7 @@ $parameters=explode('/',$_GET['p']);
 
 require_once(ROOT.'app/Model.php');
 require_once(ROOT.'app/Controller.php');
-//If we have one param
+//If we have one parameters else we go to the controller main at the method index 
 if($parameters[0] != "")
 {
 	//We save the first parameters of the controller and we go to put seem first case in upper

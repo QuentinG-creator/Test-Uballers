@@ -7,14 +7,14 @@ class Controllermain extends Controller
 	}
 
 	/**
-	 * It is the function register of the controller with her we can register any user
+	 * It is the method of register of the controller with her we can register any user
 	 *
 	 * @return void
 	 *
 	 */
 	public function register()
 	{
-		//This variable is for get all of the data wen the user submit the form
+		//This variable is for get all of the data when the user submit the form
 		$data= [
 			'nom' => '',
 			'prenom' => '',
@@ -42,6 +42,8 @@ class Controllermain extends Controller
 		{	
 
 			$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+			//the function trim is for strip white space from the beggining and end of the string
 			$data= [
 				'nom' => trim($_POST['nom']),
 				'prenom' => trim($_POST['prenom']),
@@ -121,19 +123,19 @@ class Controllermain extends Controller
 				$data['numero_email_conf_err']="Veuillez bien réécrire votre email ou numéro de téléphone";
 			}
 
-			//Validation of the first name
+			//Validate of the first name
 			if(empty($data['prenom']))
 			{
 				$data['prenom_err']="Veuillez renseigner le champ";
 			} 
 
-			//Validation of the last name
+			//Validate of the last name
 			if(empty($data['nom']))
 			{
 				$data['nom_err']="Veuillez renseigner le champ";
 			} 
 
-			//Validation of the birthday
+			//Validate of the birthday
 			if($data['jour']!="jour" && $data['mois']!="mois" && $data['annee']!="annee")
 			{
 				$data['naissance']=$data['annee']."-".$data['mois']."-".$data['jour'];
@@ -161,14 +163,14 @@ class Controllermain extends Controller
 
 
 	/**
-	 * The function login of the controller is for log some user register
+	 * The method of login of the controller is for log in the user who registered
 	 *
 	 * @return void
 	 */
 
 	public function login()
 	{
-		//This variable is for get all of the data wen the user submit the form
+		//This variable is for get all of the data when the user submit the form
 		$data= [
 			'numero_email_log' => '',
 			'mdp_log' => '',
@@ -185,7 +187,7 @@ class Controllermain extends Controller
 			
 			$_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-
+			//the function trim is for strip white space from the beggining and end of the string
 			$data= [
 				'numero_email_log' => trim($_POST['numero_email_login']),
 				'mdp_log' => trim($_POST['mdp_login']),

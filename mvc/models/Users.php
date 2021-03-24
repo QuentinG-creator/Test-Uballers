@@ -8,7 +8,7 @@ class Users extends Model
 	}
 
 	/** 
-	 * This function is to find one Users with then Number
+	 * This method is used to find one Users with her Phone Number
 	 *
 	 * @param Array $data 
 	 * @return void
@@ -31,7 +31,7 @@ class Users extends Model
 	}
 
 	/** 
-	 * This function is to find one Users with then Email
+	 * This method is to find one Users with her Email
 	 *
 	 * @param Array $data 
 	 * @return void
@@ -53,7 +53,7 @@ class Users extends Model
 	}
 
 	/**
-	 * This function is for the login of many Users
+	 * This method is for the login of many Users
 	 * 
 	 * @param String $login
 	 * @param String $mdp
@@ -85,7 +85,7 @@ class Users extends Model
 	}
 
 	/**
-	 * The principal function for add the new Users at the database
+	 * The principal method for add the new Users at the database
 	 *
 	 * @param array $data
 	 * @return void

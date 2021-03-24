@@ -14,12 +14,13 @@ abstract class Controller
         //start the buffering
         ob_start();
 
-        require_once(ROOT.'views/'.$file.'.php');
+
+        require_once(ROOT.'views/'.strtolower($file).'/'.$file.'.php');
 
         //We stock all the content in the variable $content
         $content=ob_get_clean();
 
-        //We create the views
+        //We create the template
         require_once(ROOT.'views/layout/default.php');
 	}
 
