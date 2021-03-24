@@ -8,4 +8,4 @@ Pour les étapes d'éxecutions voici comment procéder :
 
 Pour plus ample information j'ai rédigé quelques lignes en commentaire dans index.php.
 
-![Uploading image.png…]()
+![Capture d’écran du 2021-03-24 15-22-47](https://user-images.githubusercontent.com/73114129/112326556-e80b7900-8cb4-11eb-9d61-73f1d25ac028.png)
