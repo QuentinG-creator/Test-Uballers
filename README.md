@@ -3,8 +3,10 @@
 Pour les étapes d'éxecutions voici comment procéder :
 
 1. Mettre le dossier mvc dans votre dossier apache2 (var/www/html)
-2. Ouvrir le navigateur et se rendre à l'url suivante : localhost/mvc/.
-3. Et maintenant il ne reste plus qu'à tester.
+2. Aller dans mvc/app/model et entrer votre username et votre password phpmyadmin ou autre afin que le site puisse trouver une base de donnée
+3. Importer la base de donnée via le .sql que j'ai mis a la racine du github
+3. Ouvrir le navigateur et se rendre à l'url suivante : localhost/mvc/.
+4. Et maintenant il ne reste plus qu'à tester.
 
 Pour plus ample information j'ai rédigé quelques lignes en commentaire dans index.php.
 
