@@ -6,9 +6,9 @@
  * La partie HTML5 CSS m'a pris 4h environ
  *
  *
- * Difficulter rencontrer :
- * 1.Quelques soucis au niveau de la programmation de l'enregistrement des utilisateur et de la connexion.
- * 2.Sur la partie css difficulté a bien mettre en place la page d'inscription.
+ * Difficulter rencontrait :
+ * 1.Quelques soucis au niveau de la programmation de l'enregistrement des utilisateurs et de la connexion.
+ * 2.Sur la partie css des difficultés a bien mettre en place la page d'inscription.
  * 3.Au niveau de la partie HTML pas vraiment de difficulté rencontrer.
  * 
  * Pour ce qui est des commentaires j'ai essayé de les faire au maximum en anglais.
