@@ -75,7 +75,7 @@ class Controllermain extends Controller
 			{
 				$data['mdp_err']='Veuillez renseigner le champ';
 			} 
-			else if(!preg_match($mdpValidation,$data['mdp'])) 
+			else if(!preg_match($mdpValidate,$data['mdp'])) 
 			{
 				$data['mdp_err']="Votre mot de passe doit contenir 8 caractéres minimum et 20 caractéres maximum";
 			}
@@ -87,7 +87,7 @@ class Controllermain extends Controller
 			} 
 
 			//We check if the phone number was correctly write
-			else if(preg_match("/^[0-9]{10}$/",$data['numero_email']))
+			else if(preg_match($numeroValidate,$data['numero_email']))
 			{
 				
 				$data['numero']=$data['numero_email'];

@@ -98,7 +98,6 @@ class Users extends Model
 	        $query = $this->_connexion->prepare('
 	            INSERT INTO Users (id, Prenom, Nom, NumeroMob, Email, Mdp, Date_naissance, Sexe) VALUES 
 	            (NULL,:prenom,:nom,:numeroMob,:email,:mdp,:date_naissance,:sexe)');
-	        $query->bindParam(':table',$this->table);
 	        $query->bindParam(':prenom',$data['prenom']);
 	        $query->bindParam(':nom',$data['nom']);
 	        $query->bindParam(':numeroMob',$data['numero']);
